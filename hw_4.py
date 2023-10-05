@@ -65,7 +65,7 @@ def test_random_list():
          random.randint(1, 100),
          random.randint(1, 100),
          random.randint(1, 100),
-         random.randint(1, 100), ]
+         random.randint(1, 100)]
     l.sort()
 
     assert len(l) == 10

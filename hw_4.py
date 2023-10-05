@@ -1,3 +1,5 @@
+import random
+
 
 def test_greeting():
     """
@@ -54,11 +56,21 @@ def test_random_list():
 
     # TODO создайте список
 
-    l = [4, 15, 54, 76, 98, 2, 64, 12, 90, 13]
+    l = [random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100),
+         random.randint(1, 100), ]
     l.sort()
 
     assert len(l) == 10
     assert l[0] < l[-1]
+    print(l)
 
 
 def test_unique_elements():
